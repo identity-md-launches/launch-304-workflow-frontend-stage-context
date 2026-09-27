@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-27T06:10:41.177Z",
+  "status": "passed",
+  "assets": 6,
+  "exportBytes": 559735,
+  "scopedFileBytes": 2176245,
+  "abiHashes": [
+    {
+      "name": "LaunchToken",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee"
+    },
+    {
+      "name": "KudosEpochs",
+      "abiHash": "17bb8dbdc46141607f2fb078213631e3365e93653f8c6c0be6baf72ff744d766"
+    }
+  ],
+  "checks": [
+    "handoff fields",
+    "exact network and walletAddChain objects",
+    "pinned ABI bytes and canonical Keccak",
+    "complete SHA-256 inventory",
+    "relative paths",
+    "asset count and size",
+    "no dependency/cache artifacts"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-27T06:05:58.449Z",
+  "mode": "Unmocked public-RPC reads in Chromium. No wallet or transactions.",
+  "consoleErrors": [],
+  "failedRequests": [],
+  "status": "passed",
+  "week": "Week 1 · Resets Oct 4, 05:47 AM UTC\n↻ Refresh",
+  "provenance": "From onchain events · Blocks 11791335–11791425 · Refreshed every 30 seconds",
+  "alerts": [
+    "",
+    ""
+  ]
+}

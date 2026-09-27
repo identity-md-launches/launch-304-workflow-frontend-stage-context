@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-27T06:00:33.870Z",
+  "readOnly": true,
+  "transactionsBroadcast": 0,
+  "results": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "status": "passed",
+      "chainId": 11155111,
+      "blockNumber": 11791398,
+      "code": [
+        {
+          "name": "LaunchToken",
+          "bytes": 1722
+        },
+        {
+          "name": "KudosEpochs",
+          "bytes": 2333
+        }
+      ],
+      "tokenBinding": "0x4A64f2BAEb7FaFCa2C023CBd8a5f3898649D3C2c",
+      "epoch": "0",
+      "deployTimestamp": "1790488056",
+      "decimals": 18,
+      "symbol": "KUDO"
+    }
+  ]
+}

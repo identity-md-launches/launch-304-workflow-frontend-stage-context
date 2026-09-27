@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-09-27T06:06:17.457Z",
+  "environment": "Chromium production export at /preview/; mocked EIP-1193 wallet and JSON-RPC; no real transactions",
+  "tests": [
+    {
+      "name": "Production subpath loads; disconnected actions disabled; no wallet recovery",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown wallet chain adds exact supplied chain, switches again, then enables actions",
+      "status": "passed"
+    },
+    {
+      "name": "Free give simulates and submits with zero tip and no approval",
+      "status": "passed"
+    },
+    {
+      "name": "Tip total is count × per-kudo; exact approval precedes give; balances refresh",
+      "status": "passed"
+    },
+    {
+      "name": "Withdraw pulls entire credit and disables a second withdrawal",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid recipient, self, zero, count, precision, overflow and insufficient balance never request a transaction",
+      "status": "passed"
+    },
+    {
+      "name": "Wallet rejection and simulation errors are shown with no broadcast",
+      "status": "passed"
+    },
+    {
+      "name": "Account change during simulation prevents signing",
+      "status": "passed"
+    },
+    {
+      "name": "Account and chain events invalidate spending state",
+      "status": "passed"
+    },
+    {
+      "name": "Leaderboard aggregates count by recipient, deduplicates logs and uses complete epoch range",
+      "status": "passed"
+    },
+    {
+      "name": "Failed event range shows an error instead of a partial leaderboard",
+      "status": "passed"
+    },
+    {
+      "name": "Missing code, wrong RPC chain and token binding mismatch gate writes",
+      "status": "passed"
+    },
+    {
+      "name": "Changing a paid plan requires fresh approval; a new epoch blocks a stale give",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard-only connect, approve, give and withdraw flow",
+      "status": "passed"
+    },
+    {
+      "name": "Tampered ABI refuses to initialize",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop/mobile/intermediate reflow, keyboard focus, reduced motion and accessibility audit",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "desktop-disconnected.png",
+    "desktop-connected-approval.png",
+    "mobile-390.png",
+    "mobile-320.png",
+    "desktop-keyboard-focus.png",
+    "desktop-wallet-focus.png"
+  ],
+  "errors": [],
+  "resourceFailures": [],
+  "contrast": [
+    {
+      "name": "Body",
+      "foreground": "rgb(32, 59, 46)",
+      "background": "rgb(247, 246, 240)",
+      "ratio": 11.23,
+      "minimum": 4.5
+    },
+    {
+      "name": "Secondary text on card",
+      "foreground": "rgb(88, 100, 90)",
+      "background": "rgb(255, 254, 250)",
+      "ratio": 6.15,
+      "minimum": 4.5
+    },
+    {
+      "name": "Primary action",
+      "foreground": "rgb(255, 254, 250)",
+      "background": "rgb(37, 77, 55)",
+      "ratio": 9.48,
+      "minimum": 4.5
+    },
+    {
+      "name": "Wallet secondary text",
+      "foreground": "rgb(201, 213, 197)",
+      "background": "rgb(32, 59, 46)",
+      "ratio": 8,
+      "minimum": 4.5
+    },
+    {
+      "name": "Selected count",
+      "foreground": "rgb(32, 59, 46)",
+      "background": "rgb(234, 240, 229)",
+      "ratio": 10.48,
+      "minimum": 4.5
+    },
+    {
+      "name": "Field focus",
+      "foreground": "rgb(55, 110, 192)",
+      "background": "rgb(255, 254, 250)",
+      "ratio": 5.01,
+      "minimum": 3
+    },
+    {
+      "name": "Wallet focus",
+      "foreground": "rgb(229, 237, 155)",
+      "background": "rgb(32, 59, 46)",
+      "ratio": 9.8,
+      "minimum": 3
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1280,
+      "violations": []
+    },
+    {
+      "width": 800,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "violations": []
+    }
+  ],
+  "status": "passed"
+}

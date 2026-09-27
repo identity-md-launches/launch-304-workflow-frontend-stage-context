@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-270-kudosepochs",
+  "version": 1,
+  "launchId": "58cb99e6-81cb-4e25-9bf8-ef841ed577df",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Kudos (KUDO) on Sepolia. LaunchToken (src/LaunchToken.sol) is a fixed-supply ERC-20 with no constructor arguments, 18 decimals and no mint/admin functions; it mints exactly 1,000,000,000 KUDO to msg.sender (the factory). KudosEpochs (src/KudosEpochs.sol) takes the launch token address as its only constructor argument (address token_ <- $token), stores it immutable as token() and records deployTimestamp; it needs no KUDO balance or approval at deploy. It has no owner, admin, pause or upgrade path, no payable/receive/fallback function, and no initialization calls. Each address may give 5 non-transferable kudos per 7-day epoch counted from deployment, with optional KUDO tips pulled via approve + safeTransferFrom and credited to the recipient's withdrawable balance; withdraw() is pull-based and nonReentrant. The pool pairs KUDO with native Sepolia ETH (zero address), fee 3000, tickSpacing 60, no hook; initialPrice is the 1:1 sqrtPriceX96 used only by legacy policies, as the pinned policy derives the opening price. Supply, allocations and ownership come from launch policy, not this manifest.",
+    "token": {
+      "name": "Kudos",
+      "symbol": "KUDO",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "KudosEpochs",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0xaed547411f83e71873c4f03007dda6b8b7e97b6c3554328a6e0f95d23983534d",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x4a64f2baeb7fafca2c023cbd8a5f3898649d3c2c",
+      "blockNumber": 11791335,
+      "creationCodeHash": "e371956ea5629b0ab81aac435dfc2bcb6bc8cc2ed31c4b6e3e92e6ebbd7a543c"
+    },
+    {
+      "name": "KudosEpochs",
+      "txHash": "0xaed547411f83e71873c4f03007dda6b8b7e97b6c3554328a6e0f95d23983534d",
+      "abiHash": "17bb8dbdc46141607f2fb078213631e3365e93653f8c6c0be6baf72ff744d766",
+      "address": "0xb0f9062f1f15742663e6d95b2bf9b9b70345833d",
+      "blockNumber": 11791335,
+      "creationCodeHash": "32058787b3cdf9e790d1fb7f3747d7ccebbea7dca0c09602fedf412a3d3bebdd"
+    }
+  ],
+  "sourceCommit": "55a010a0c735953a1a4b124d586644121ab055f3",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "5b536295e3c3612eb64b0e8b93b15ccd80d2bf59e9702bb854f08944b0f677a3"
+}
